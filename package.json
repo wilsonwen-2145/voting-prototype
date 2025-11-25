@@ -74,11 +74,10 @@
     "webpack": "^4.44.0"
   },
   "scripts": {
-    "start": "npm run check-env && npm run app:pre | react-scripts --openssl-legacy-provider start --kill-others --kill-others-on-fail",
+    "start": "npm run app:pre | react-scripts --openssl-legacy-provider start --kill-others --kill-others-on-fail",
     "prepare": "npm run app:pre | react-scripts --openssl-legacy-provider build --kill-others --kill-others-on-fail",
     "eject": "react-scripts eject",
     "app:pre": "node app/index.js",
-    "check-env": "node ./check-environment.js",
     "test": "react-scripts test"
   },
   "eslintConfig": {
